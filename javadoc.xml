@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="target/test-classes" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" source="1.8" sourcefiles="src/main/java/com/erya/src/Tondeuse.java" sourcepath="src/main/java;src/main/resources;src/test/java;src/test/resources" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

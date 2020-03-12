@@ -6,9 +6,9 @@ public class Position {
 
 	private int y;
 
-	private String orientation;
+	private char orientation;
 
-	public Position(int x, int y, String orientation) {
+	public Position(int x, int y, char orientation) {
 		super();
 		this.x = x;
 		this.y = y;
@@ -35,12 +35,14 @@ public class Position {
 		this.y = y;
 	}
 
-	public String getOrientation() {
+	public char getOrientation() {
 		return orientation;
 	}
 
-	public void setOrientation(String orientation) {
+	public void setOrientation(char orientation) {
 		this.orientation = orientation;
 	}
+
+	
 
 }

@@ -1,12 +1,12 @@
 package com.erya.src;
 
-public class Terrain {
+public class Field {
 
 	private int Xmax;
 
 	private int Ymax;
 
-	public Terrain(int Xmax, int Ymax) {
+	public Field(int Xmax, int Ymax) {
 		super();
 		this.Xmax = Xmax;
 		this.Ymax = Ymax;

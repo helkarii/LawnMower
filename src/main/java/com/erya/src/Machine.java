@@ -1,41 +1,43 @@
 package com.erya.src;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Machine {
+/**
+ * class abstract can be used to instanciate different machine
+ * @author helkarii
+ *
+ */
+public abstract class Machine implements Command {
 
-	private Position positionIntiale;
+	private Position initialPosition;
 
-	private List<String> instructionDeplacement = new ArrayList<String>();
+	private String movingInstructions;
 
 	public Machine() {
 
 	}
 
-	public Machine(Position positionIntiale, List<String> instructionDeplacement) {
+	public Machine(Position initialPosition, String movingInstructions) {
 		super();
-		this.positionIntiale = positionIntiale;
-		this.instructionDeplacement = instructionDeplacement;
+		this.initialPosition = initialPosition;
+		this.movingInstructions = movingInstructions;
 	}
 
-	public Position getPositionIntiale() {
-		return positionIntiale;
+	public Position getInitialPosition() {
+		return initialPosition;
 	}
 
-	public void setPositionIntiale(Position positionIntiale) {
-		this.positionIntiale = positionIntiale;
+	public void setInitialPosition(Position initialPosition) {
+		this.initialPosition = initialPosition;
 	}
 
-	public List<String> getInstructionDeplacement() {
-		return instructionDeplacement;
+	public String getMovingInstructions() {
+		return movingInstructions;
 	}
 
-	public void setInstructionDeplacement(List<String> instructionDeplacement) {
-		this.instructionDeplacement = instructionDeplacement;
+	public void setMovingInstructions(String movingInstructions) {
+		this.movingInstructions = movingInstructions;
 	}
-
-	public abstract List<Position> command(Terrain terrain) throws Exception;
 
 	public abstract void display(List<Position> positions);
 
